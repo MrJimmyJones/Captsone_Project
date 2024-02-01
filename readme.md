@@ -1,0 +1,53 @@
+## Introduction
+The goal of this exercise is to create a product to highlight the prediction algorithm that you have built and to provide an interface that can be accessed by others.
+
+### Experience using the app
+
+1. The app uses the correct prediction algorithm for words prediction
+2. The results shown uses the functions for prediction.
+
+https://github.com/MrJimmyJones/Captsone_Project/tree/main/final_project
+
+https://mrjimmyjones.shinyapps.io/Data_Science_Final_Project/
+
+Thank you all for viewing my presentation
+
+
+## Part 1
+
+### How the predictor works
+This R script appears to be implementing a predictive text model using n-grams (bigrams, trigrams, and fourgrams). 
+
+### Loading Data:
+
+This part loads precomputed n-gram data (bigrams, trigrams, and fourgrams) from RDS files. These files likely contain information about the relationships between words in a corpus.
+
+### Defining the nextWordPredictor Function:
+
+This function takes an input text (inputTxt) and predicts the next word(s) based on the context provided by the input. It utilizes n-grams for prediction.
+
+## Part 2
+
+### Data Cleaning:
+
+The input text is preprocessed to ensure consistency. It is converted to lowercase, numbers are removed, punctuation is removed, and extra whitespace is stripped.
+
+### Splitting Input into Words:
+
+The cleaned input text is split into a list of words based on spaces.
+
+### Defining Functions for N-gram Predictions:
+
+These functions take a sequence of words and return the next word(s) based on the precomputed n-gram data.
+
+## PART 3
+
+### Conditional Branching for Prediction:
+
+The script checks the number of words in the input and chooses the appropriate n-gram function for prediction. If no prediction is found, it falls back to lower-order n-grams.
+
+### Returning Top Predictions:
+
+The function returns the top n predictions as a character vector. If the input text is empty, the function returns an empty string.
+
+Overall, this script defines a function that uses n-grams to predict the next word(s) in a sequence based on input text. The predictions are then returned as a character vector.
